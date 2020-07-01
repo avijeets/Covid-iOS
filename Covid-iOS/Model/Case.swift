@@ -13,5 +13,6 @@ struct Case: Decodable {
     let total: Int
     let positive: Int
     let death: Int
+    let recovered: Int?
     let hospitalized: Int?
 }
