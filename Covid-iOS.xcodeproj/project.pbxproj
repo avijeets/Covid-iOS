@@ -16,8 +16,65 @@
 		ADC5416F24AC25D60027CF26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5416E24AC25D60027CF26 /* Constants.swift */; };
 		ADC5417124AC272B0027CF26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417024AC272B0027CF26 /* NetworkManager.swift */; };
 		ADC5417424AC28470027CF26 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417324AC28470027CF26 /* Case.swift */; };
-		ADC5417C24AC2A7A0027CF26 /* CasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417B24AC2A7A0027CF26 /* CasesViewModel.swift */; };
+		ADC5418324AC468A0027CF26 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADC5418124AC468A0027CF26 /* Interface.storyboard */; };
+		ADC5418524AC468C0027CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5418424AC468C0027CF26 /* Assets.xcassets */; };
+		ADC5418C24AC468C0027CF26 /* Covid-watchOS Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ADC5418B24AC468C0027CF26 /* Covid-watchOS Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADC5419124AC468C0027CF26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5419024AC468C0027CF26 /* ContentView.swift */; };
+		ADC5419324AC468C0027CF26 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5419224AC468C0027CF26 /* HostingController.swift */; };
+		ADC5419524AC468C0027CF26 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5419424AC468C0027CF26 /* ExtensionDelegate.swift */; };
+		ADC5419724AC468C0027CF26 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5419624AC468C0027CF26 /* NotificationController.swift */; };
+		ADC5419924AC468C0027CF26 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5419824AC468C0027CF26 /* NotificationView.swift */; };
+		ADC5419B24AC468D0027CF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5419A24AC468D0027CF26 /* Assets.xcassets */; };
+		ADC5419E24AC468D0027CF26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADC5419D24AC468D0027CF26 /* Preview Assets.xcassets */; };
+		ADC541A324AC468D0027CF26 /* Covid-watchOS.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ADC5417F24AC468A0027CF26 /* Covid-watchOS.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ADC541AC24AC47FF0027CF26 /* CasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417B24AC2A7A0027CF26 /* CasesViewModel.swift */; };
+		ADC541AD24AC48010027CF26 /* CasesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417B24AC2A7A0027CF26 /* CasesViewModel.swift */; };
+		ADC541AE24AC48180027CF26 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417324AC28470027CF26 /* Case.swift */; };
+		ADC541AF24AC48490027CF26 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5417024AC272B0027CF26 /* NetworkManager.swift */; };
+		ADC541B024AC48530027CF26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5416E24AC25D60027CF26 /* Constants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADC5418D24AC468C0027CF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADC5414B24AC25A20027CF26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADC5418A24AC468C0027CF26;
+			remoteInfo = "Covid-watchOS Extension";
+		};
+		ADC541A124AC468D0027CF26 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADC5414B24AC25A20027CF26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADC5417E24AC468A0027CF26;
+			remoteInfo = "Covid-watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ADC541A424AC468D0027CF26 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ADC541A324AC468D0027CF26 /* Covid-watchOS.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC541A724AC468D0027CF26 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ADC5418C24AC468C0027CF26 /* Covid-watchOS Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		ADC5415324AC25A20027CF26 /* Covid-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,10 +89,31 @@
 		ADC5417024AC272B0027CF26 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		ADC5417324AC28470027CF26 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
 		ADC5417B24AC2A7A0027CF26 /* CasesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CasesViewModel.swift; sourceTree = "<group>"; };
+		ADC5417F24AC468A0027CF26 /* Covid-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC5418224AC468A0027CF26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ADC5418424AC468C0027CF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADC5418624AC468C0027CF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC5418B24AC468C0027CF26 /* Covid-watchOS Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Covid-watchOS Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADC5419024AC468C0027CF26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ADC5419224AC468C0027CF26 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		ADC5419424AC468C0027CF26 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ADC5419624AC468C0027CF26 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ADC5419824AC468C0027CF26 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		ADC5419A24AC468D0027CF26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADC5419D24AC468D0027CF26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ADC5419F24AC468D0027CF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADC541A024AC468D0027CF26 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ADC5415024AC25A20027CF26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC5418824AC468C0027CF26 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -49,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				ADC5415524AC25A20027CF26 /* Covid-iOS */,
+				ADC5418024AC468A0027CF26 /* Covid-watchOS */,
+				ADC5418F24AC468C0027CF26 /* Covid-watchOS Extension */,
 				ADC5415424AC25A20027CF26 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				ADC5415324AC25A20027CF26 /* Covid-iOS.app */,
+				ADC5417F24AC468A0027CF26 /* Covid-watchOS.app */,
+				ADC5418B24AC468C0027CF26 /* Covid-watchOS Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -111,6 +193,40 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		ADC5418024AC468A0027CF26 /* Covid-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5418124AC468A0027CF26 /* Interface.storyboard */,
+				ADC5418424AC468C0027CF26 /* Assets.xcassets */,
+				ADC5418624AC468C0027CF26 /* Info.plist */,
+			);
+			path = "Covid-watchOS";
+			sourceTree = "<group>";
+		};
+		ADC5418F24AC468C0027CF26 /* Covid-watchOS Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5419024AC468C0027CF26 /* ContentView.swift */,
+				ADC5419224AC468C0027CF26 /* HostingController.swift */,
+				ADC5419424AC468C0027CF26 /* ExtensionDelegate.swift */,
+				ADC5419624AC468C0027CF26 /* NotificationController.swift */,
+				ADC5419824AC468C0027CF26 /* NotificationView.swift */,
+				ADC5419A24AC468D0027CF26 /* Assets.xcassets */,
+				ADC5419F24AC468D0027CF26 /* Info.plist */,
+				ADC541A024AC468D0027CF26 /* PushNotificationPayload.apns */,
+				ADC5419C24AC468D0027CF26 /* Preview Content */,
+			);
+			path = "Covid-watchOS Extension";
+			sourceTree = "<group>";
+		};
+		ADC5419C24AC468D0027CF26 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ADC5419D24AC468D0027CF26 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -121,15 +237,51 @@
 				ADC5414F24AC25A20027CF26 /* Sources */,
 				ADC5415024AC25A20027CF26 /* Frameworks */,
 				ADC5415124AC25A20027CF26 /* Resources */,
+				ADC541A424AC468D0027CF26 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				ADC541A224AC468D0027CF26 /* PBXTargetDependency */,
 			);
 			name = "Covid-iOS";
 			productName = "Covid-iOS";
 			productReference = ADC5415324AC25A20027CF26 /* Covid-iOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		ADC5417E24AC468A0027CF26 /* Covid-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADC541AB24AC468D0027CF26 /* Build configuration list for PBXNativeTarget "Covid-watchOS" */;
+			buildPhases = (
+				ADC5417D24AC468A0027CF26 /* Resources */,
+				ADC541A724AC468D0027CF26 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADC5418E24AC468C0027CF26 /* PBXTargetDependency */,
+			);
+			name = "Covid-watchOS";
+			productName = "Covid-watchOS";
+			productReference = ADC5417F24AC468A0027CF26 /* Covid-watchOS.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ADC5418A24AC468C0027CF26 /* Covid-watchOS Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADC541AA24AC468D0027CF26 /* Build configuration list for PBXNativeTarget "Covid-watchOS Extension" */;
+			buildPhases = (
+				ADC5418724AC468C0027CF26 /* Sources */,
+				ADC5418824AC468C0027CF26 /* Frameworks */,
+				ADC5418924AC468C0027CF26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Covid-watchOS Extension";
+			productName = "Covid-watchOS Extension";
+			productReference = ADC5418B24AC468C0027CF26 /* Covid-watchOS Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -142,6 +294,12 @@
 				ORGANIZATIONNAME = "Avijeet Sachdev";
 				TargetAttributes = {
 					ADC5415224AC25A20027CF26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					ADC5417E24AC468A0027CF26 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					ADC5418A24AC468C0027CF26 = {
 						CreatedOnToolsVersion = 11.5;
 					};
 				};
@@ -160,6 +318,8 @@
 			projectRoot = "";
 			targets = (
 				ADC5415224AC25A20027CF26 /* Covid-iOS */,
+				ADC5417E24AC468A0027CF26 /* Covid-watchOS */,
+				ADC5418A24AC468C0027CF26 /* Covid-watchOS Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +332,24 @@
 				ADC5416324AC25A30027CF26 /* LaunchScreen.storyboard in Resources */,
 				ADC5416024AC25A30027CF26 /* Preview Assets.xcassets in Resources */,
 				ADC5415D24AC25A30027CF26 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC5417D24AC468A0027CF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC5418524AC468C0027CF26 /* Assets.xcassets in Resources */,
+				ADC5418324AC468A0027CF26 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC5418924AC468C0027CF26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC5419E24AC468D0027CF26 /* Preview Assets.xcassets in Resources */,
+				ADC5419B24AC468D0027CF26 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,11 +366,40 @@
 				ADC5417124AC272B0027CF26 /* NetworkManager.swift in Sources */,
 				ADC5415924AC25A20027CF26 /* SceneDelegate.swift in Sources */,
 				ADC5415B24AC25A20027CF26 /* ContentView.swift in Sources */,
-				ADC5417C24AC2A7A0027CF26 /* CasesViewModel.swift in Sources */,
+				ADC541AD24AC48010027CF26 /* CasesViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADC5418724AC468C0027CF26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADC541AC24AC47FF0027CF26 /* CasesViewModel.swift in Sources */,
+				ADC5419324AC468C0027CF26 /* HostingController.swift in Sources */,
+				ADC5419124AC468C0027CF26 /* ContentView.swift in Sources */,
+				ADC5419724AC468C0027CF26 /* NotificationController.swift in Sources */,
+				ADC541AF24AC48490027CF26 /* NetworkManager.swift in Sources */,
+				ADC5419524AC468C0027CF26 /* ExtensionDelegate.swift in Sources */,
+				ADC541AE24AC48180027CF26 /* Case.swift in Sources */,
+				ADC5419924AC468C0027CF26 /* NotificationView.swift in Sources */,
+				ADC541B024AC48530027CF26 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADC5418E24AC468C0027CF26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADC5418A24AC468C0027CF26 /* Covid-watchOS Extension */;
+			targetProxy = ADC5418D24AC468C0027CF26 /* PBXContainerItemProxy */;
+		};
+		ADC541A224AC468D0027CF26 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADC5417E24AC468A0027CF26 /* Covid-watchOS */;
+			targetProxy = ADC541A124AC468D0027CF26 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ADC5416124AC25A30027CF26 /* LaunchScreen.storyboard */ = {
@@ -201,6 +408,14 @@
 				ADC5416224AC25A30027CF26 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ADC5418124AC468A0027CF26 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADC5418224AC468A0027CF26 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -360,6 +575,92 @@
 			};
 			name = Release;
 		};
+		ADC541A524AC468D0027CF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				IBSC_MODULE = Covid_watchOS_Extension;
+				INFOPLIST_FILE = "Covid-watchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avijeets.Covid-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		ADC541A624AC468D0027CF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				IBSC_MODULE = Covid_watchOS_Extension;
+				INFOPLIST_FILE = "Covid-watchOS/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avijeets.Covid-iOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		ADC541A824AC468D0027CF26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Covid-watchOS Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Covid-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avijeets.Covid-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		ADC541A924AC468D0027CF26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Covid-watchOS Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PM5X37M9NZ;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Covid-watchOS Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.avijeets.Covid-iOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -377,6 +678,24 @@
 			buildConfigurations = (
 				ADC5416824AC25A30027CF26 /* Debug */,
 				ADC5416924AC25A30027CF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADC541AA24AC468D0027CF26 /* Build configuration list for PBXNativeTarget "Covid-watchOS Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC541A824AC468D0027CF26 /* Debug */,
+				ADC541A924AC468D0027CF26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADC541AB24AC468D0027CF26 /* Build configuration list for PBXNativeTarget "Covid-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC541A524AC468D0027CF26 /* Debug */,
+				ADC541A624AC468D0027CF26 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
