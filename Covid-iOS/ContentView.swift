@@ -47,6 +47,16 @@ struct ContentView: View {
                         }.padding(5)
                             .foregroundColor(Color.black)
                             .background(Color.white)
+                            .font(.custom("", size: 12))
+                            .cornerRadius(10)
+                        
+                        HStack {
+                            Text("P: ")
+                            Text("\(caseObj.positive)")
+                        }.padding(5)
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                            .font(.custom("", size: 12))
                             .cornerRadius(10)
                     }
                 }
