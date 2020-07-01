@@ -10,6 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @Environment(\.colorScheme) var colorScheme
     @ObservedObject private var casesList = CasesViewModel()
     
     init() {
