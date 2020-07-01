@@ -9,8 +9,31 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject private var casesList = CasesViewModel()
+    
+    init() {
+        self.casesList.getCasesData()
+    }
+    
     var body: some View {
-        Text("Hello, World!")
+        List(self.casesList.cases, id: \.id) { caseObj in
+            HStack {
+                Text(caseObj.state)
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color.green)
+                    .clipShape(Circle())
+                    .font(.custom("", size: 18))
+                Spacer()
+                
+                VStack(alignment: .center) {
+                    Text("\(caseObj.total)")
+                        .foregroundColor(Color.white)
+                        .font(.custom("", size: 18))
+                }
+                Spacer()
+            }
+        }
     }
 }
 
