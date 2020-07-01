@@ -29,6 +29,8 @@ class CaseViewModel {
         self.caseObject = individualCase
     }
     
+    let id: UUID = UUID()
+    
     var state: String {
         return self.caseObject.state
     }
@@ -39,6 +41,10 @@ class CaseViewModel {
     
     var positive: Int {
         return self.caseObject.positive
+    }
+    
+    var death: Int {
+        return self.caseObject.death
     }
     
     var hospitalized: Int {
