@@ -1,5 +1,5 @@
 //
-//  Cases.swift
+//  Case.swift
 //  Covid-iOS
 //
 //  Created by Avijeet Sachdev on 6/30/20.
