@@ -43,6 +43,10 @@ class CaseViewModel {
         return self.caseObject.positive
     }
     
+    var recovered: Int {
+        return self.caseObject.recovered ?? 0
+    }
+    
     var death: Int {
         return self.caseObject.death
     }
