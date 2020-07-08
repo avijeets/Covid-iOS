@@ -32,7 +32,7 @@ struct ContentView: View {
                     VStack(alignment: .center) {
                         Text("\(caseObj.total)")
                             .foregroundColor(self.colorScheme == .dark ? Color.white : Color.black)
-                        .font(.custom("", size: 45))
+                        .font(.custom("", size: 36))
                         
                         HStack(alignment: .center, spacing: 10) {
                             HStack {
@@ -41,7 +41,7 @@ struct ContentView: View {
                             }.padding(5)
                                 .foregroundColor(Color.black)
                                 .background(Color.white)
-                                .font(.custom("", size: 12))
+                                .font(.custom("", size: 10))
                                 .cornerRadius(10)
                             
                             HStack {
@@ -50,7 +50,7 @@ struct ContentView: View {
                             }.padding(5)
                                 .foregroundColor(Color.black)
                                 .background(Color.white)
-                                .font(.custom("", size: 12))
+                                .font(.custom("", size: 10))
                                 .cornerRadius(10)
                             
                             
@@ -61,14 +61,14 @@ struct ContentView: View {
                             }.padding(5)
                                 .foregroundColor(Color.black)
                                 .background(Color.white)
-                                .font(.custom("", size: 12))
+                                .font(.custom("", size: 10))
                                 .cornerRadius(10)
                         }
                     }
                     Spacer()
                 }
                 Text("P:")
-                .font(.custom("", size: 12))
+                .font(.custom("", size: 10))
                 Text("\(caseObj.positive)")
                 .padding(5)
                 .font(.custom("", size: 12))
